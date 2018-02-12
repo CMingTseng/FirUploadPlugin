@@ -1,0 +1,24 @@
+group 'cn.junechiu.firupload'
+version '1.0.0'
+
+apply plugin: 'groovy'
+apply plugin: 'maven'   //创建发布仓库依赖
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile localGroovy()
+    compile gradleApi()
+//    compile 'org.codehaus.groovy:groovy-all:2.3.11'
+}
+
+//发布到本地仓库 ./gradlew uploadArchives
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: uri('../repo'))
+        }
+    }
+}
