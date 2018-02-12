@@ -2,7 +2,7 @@
 
 fir.im测试分发平台 apk上传gradle插件
 
-####use:
+#### use:
 
 在项目根目录下build.gradle下添加
 
