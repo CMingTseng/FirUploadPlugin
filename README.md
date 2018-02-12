@@ -2,6 +2,9 @@
 
 fir.im测试分发平台 apk上传gradle插件
 
+如果使用python脚本上传可参考:
+https://github.com/abc20899/pythonScript/tree/master/fir_upload
+
 #### use:
 
 在项目根目录下build.gradle下添加
