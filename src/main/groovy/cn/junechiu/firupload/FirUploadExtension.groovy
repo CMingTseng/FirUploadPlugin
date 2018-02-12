@@ -15,6 +15,7 @@ class FirUploadExtension {
     int buildNum   //build号
     String iconPath   //app图标      必须参数
     String apkPath    //apk路径
+    String changelog  //日志
     //插件参数
     boolean autoUpload  //是否自动上传
 }

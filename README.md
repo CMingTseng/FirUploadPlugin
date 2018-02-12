@@ -45,6 +45,7 @@ uploadArgs {
    versionName
    buildNum
    apkPath
+   changelog
 }
 ```
 最后执行

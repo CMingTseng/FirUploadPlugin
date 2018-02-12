@@ -102,11 +102,14 @@ class UploadTask extends DefaultTask {
     }
 
     void uploadBinary(def data, def apkPath, def versionName, def versionCode) {
+        def changelog = project.uploadArgs.changelog
+        if (changelog == null || changelog.equals('')) {
+            changelog = "更新于:" + new SimpleDateFormat("yyy-MM-dd HH:mm:ss")
+                    .format(new Date())
+        }
         def url = data.upload_url
         def key = data.key
         def token = data.token
-        def changelog = "更新于:" + new SimpleDateFormat("yyy-MM-dd HH:mm:ss")
-                .format(new Date())
         def appname = project.uploadArgs.appName
         def appversion = project.uploadArgs.versionName
         def buildnum = project.uploadArgs.buildNum
