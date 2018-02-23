@@ -22,7 +22,7 @@ repositories {
 
 dependencies {
 	//远程仓库
-	//classpath 'cn.junechiu.firupload:1.0.0'
+	//classpath 'cn.junechiu.firupload:firupload:1.0.0'
 	
 	//本地测试仓库
 	classpath group: 'cn.junechiu.firupload',
